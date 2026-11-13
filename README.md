@@ -42,5 +42,4 @@ The portfolio adapts the Tooplate “Sweet Bakery” HTML5/CSS template into a p
 ## Hosting & Editing
 
 The portfolio is hosted on **GitHub Pages** from a public repository.
-
-I develop and edit the site using **github.dev** in Safari on iPad. For larger updates, I use AI-assisted bulk edits to revise complete HTML or CSS files. I commit and push changes through the Source Control tab before switching apps to avoid losing unsaved work.
+.
