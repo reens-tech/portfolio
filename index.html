@@ -17,6 +17,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="tooplate-2168-sweet-bakery.css">
+    <style>
+        /* Override blue hero background to match the warm cream/pastel About section */
+        .hero-wrapper, .hero {
+            background: #FFF8F0 !important;
+            background-color: #FFF8F0 !important;
+        }
+        /* Retro terminal typography across headings and nav */
+        h1, h2, h3, .section-title, nav a, .btn {
+            font-family: 'VT323', monospace !important;
+            letter-spacing: 1px;
+        }
+        h1 { font-size: 3.4rem !important; line-height: 1.1 !important; }
+        .section-title { font-size: 2.8rem !important; }
+        nav a { font-size: 1.4rem !important; }
+    </style>
 </head>
 <body>
     <!-- Floating decorative elements -->
@@ -36,7 +51,7 @@
         </svg>
     </div>
 
-    <!-- Header (Single-Page Smooth Scroll Navigation) -->
+    <!-- Header -->
     <header>
         <div class="header-wrapper">
             <div class="logo" style="font-family: 'VT323', monospace; font-size: 2rem; color: #8280f0; letter-spacing: 1px;">
@@ -56,10 +71,10 @@
                 <span></span>
             </div>
             <nav id="mainNav">
-                <a href="#home" class="active">Home</a>
-                <a href="#menu">Solutions</a>
-                <a href="#about">Credentials</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" class="active">~/home</a>
+                <a href="#menu">~/vault</a>
+                <a href="#about">~/certs</a>
+                <a href="#contact">~/ping</a>
             </nav>
         </div>
     </header>
@@ -68,11 +83,11 @@
     <div class="hero-wrapper">
         <section class="hero" id="home">
             <div class="hero-content">
-                <h1>Securing Networks, Fortifying Infrastructure! 🛡️</h1>
-                <p>CCNA 200-301 and CompTIA Security+ certified network engineer specializing in resilient routing, zero-trust architectures, and proactive cybersecurity defense.</p>
+                <h1>Welcome to Reen's Tech Vault 🛡️</h1>
+                <p>Hi, I'm Reen—a CCNA 200-301 and CompTIA Security+ certified network engineer. This is my personal archive of lab topologies, packet captures, and cybersecurity defense builds.</p>
                 <div class="hero-buttons">
-                    <a href="#menu" class="btn btn-primary">Explore Solutions</a>
-                    <a href="#about" class="btn btn-secondary">View Credentials</a>
+                    <a href="#menu" class="btn btn-primary">Open The Vault</a>
+                    <a href="#about" class="btn btn-secondary">My Credentials</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -192,21 +207,21 @@
         </section>
     </div>
 
-    <!-- 2. Featured Security Architecture Section -->
+    <!-- 2. Featured Lab Build Section -->
     <section class="todays-special">
         <div class="special-container">
             <div style="text-align: center;">
-                <span class="special-badge">⚡ FEATURED ARCHITECTURE ⚡</span>
-                <h2 class="section-title" style="margin-bottom: 0.5rem;">Secure Perimeter Grid</h2>
-                <p class="section-subtitle">Enterprise-grade network hardening and threat mitigation! 🎯</p>
+                <span class="special-badge">⚡ PINNED LAB BUILD ⚡</span>
+                <h2 class="section-title" style="margin-bottom: 0.5rem;">Zero-Trust Home Lab Perimeter</h2>
+                <p class="section-subtitle">My flagship multi-VLAN firewall and intrusion detection sandbox 🎯</p>
             </div>
             
             <div class="special-content">
                 <div class="special-image">
-                    <img src="images/unicorn-dream-cake.jpg" alt="Secure Perimeter Grid">
-                    <span class="special-tag">🛡️ Tier-1 Security</span>
+                    <img src="images/unicorn-dream-cake.jpg" alt="Zero-Trust Home Lab Perimeter">
+                    <span class="special-tag">🛡️ Flagship Lab</span>
                     <div class="stock-indicator">
-                        <div>⚡ Compliance: <strong>Zero-Trust Ready</strong></div>
+                        <div>⚡ Status: <strong>Active & Documented</strong></div>
                         <div class="stock-bar">
                             <div class="stock-fill" style="width: 100%;"></div>
                         </div>
@@ -214,53 +229,52 @@
                 </div>
 
                 <div class="special-details">
-                    <h2>Solution 1 - Enterprise Firewall Mesh</h2>
+                    <h2>Artifact 00 - Enterprise Firewall Mesh</h2>
                     
                     <div class="special-price-row">
-                        <span class="special-original-price">Legacy</span>
-                        <span class="special-price">Next-Gen</span>
-                        <span class="special-discount">Encrypted</span>
+                        <span class="special-original-price">802.1Q</span>
+                        <span class="special-price">pfSense + Suricata</span>
+                        <span class="special-discount">Verified</span>
                     </div>
 
                     <p class="special-description">
-                        A robust, stateful firewall deployment featuring micro-segmentation, deep packet inspection (DPI), and automated threat intelligence feeds. Engineered to block lateral movement and ensure uninterrupted enterprise uptime.
+                        A segmented virtualized lab network built to simulate enterprise perimeter defense. Features isolated VLANs for management, DMZ, and IoT traffic, stateful firewall rules, deep packet inspection (DPI), and centralized SIEM log forwarding.
                     </p>
 
                     <div class="countdown-container">
-                        <div class="countdown-label">⏰ Threat Monitoring Uptime:</div>
+                        <div class="countdown-label">⏰ Lab Telemetry & Architecture Specs:</div>
                         <div class="countdown">
                             <div class="countdown-item">
-                                <span class="countdown-number" id="days">99</span>
-                                <span class="countdown-label-text">Days</span>
+                                <span class="countdown-number" id="days">06</span>
+                                <span class="countdown-label-text">VLANs</span>
                             </div>
                             <div class="countdown-item">
                                 <span class="countdown-number" id="hours">24</span>
-                                <span class="countdown-label-text">Hours</span>
+                                <span class="countdown-label-text">ACLs</span>
                             </div>
                             <div class="countdown-item">
-                                <span class="countdown-number" id="minutes">7</span>
-                                <span class="countdown-label-text">Min</span>
+                                <span class="countdown-number" id="minutes">03</span>
+                                <span class="countdown-label-text">Subnets</span>
                             </div>
                             <div class="countdown-item">
-                                <span class="countdown-number" id="seconds">365</span>
-                                <span class="countdown-label-text">Days/Yr</span>
+                                <span class="countdown-number" id="seconds">01</span>
+                                <span class="countdown-label-text">SIEM Node</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="special-cta">
-                        <button class="btn-special"><span>🔒 Audit Solution 1</span></button>
-                        <button class="btn-notify"><span>🔔</span></button>
+                        <a href="#menu" class="btn-special" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"><span>🔒 View Lab Topology & Notes</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 3. Core Competencies Section -->
+    <!-- 3. Core Skills Section -->
     <section class="features">
-        <h2 class="section-title">Core Engineering & Security Skills ✨</h2>
-        <p class="section-subtitle">Discover what makes our network infrastructure bulletproof</p>
+        <h2 class="section-title">Technical Focus Areas ✨</h2>
+        <p class="section-subtitle">Domains I design, configure, and troubleshoot in my lab</p>
         <div class="features-grid">
             <div class="feature-card">
                 <svg class="feature-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -268,14 +282,14 @@
                     <path d="M30 45L45 60L70 35" stroke="#8DC4B2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <h3>Routing & Switching</h3>
-                <p>Advanced OSPF, EIGRP, BGP configurations, and VLAN segmentation optimized for speed and high availability.</p>
+                <p>OSPF, EIGRP, BGP multi-homing, Spanning Tree (RSTP), EtherChannel, and inter-VLAN routing configurations.</p>
             </div>
             <div class="feature-card">
                 <svg class="feature-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M50 20L60 45H80L65 58L72 83L50 68L28 83L35 58L20 45H40L50 20Z" fill="#FFB8D2"/>
                 </svg>
-                <h3>Threat Defense & SIEM</h3>
-                <p>Proactive vulnerability assessment, incident response, IDS/IPS tuning, and log monitoring pipelines.</p>
+                <h3>Network Security & SOC</h3>
+                <p>Packet analysis in Wireshark, IDS/IPS rule tuning, vulnerability scanning, and SIEM alert triage.</p>
             </div>
             <div class="feature-card">
                 <svg class="feature-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -283,138 +297,140 @@
                     <circle cx="65" cy="40" r="20" fill="#D4C5F9"/>
                     <circle cx="50" cy="60" r="20" fill="#FFB4A2"/>
                 </svg>
-                <h3>Identity & Access</h3>
-                <p>Zero-trust security models, multi-factor authentication enforcement, and secure VPN tunnel architectures.</p>
+                <h3>Zero-Trust & Tunneling</h3>
+                <p>Site-to-site IPsec VPNs, WireGuard tunnels, RADIUS/TACACS+ authentication, and least-privilege ACLs.</p>
             </div>
         </div>
     </section>
 
-    <!-- 4. Solutions / Prototypes Section -->
+    <!-- 4. Vault / Portfolio Artifacts Section -->
     <section class="menu" id="menu">
         <div class="menu-container">
-            <h2 class="section-title">Network & Security Solutions 💻</h2>
-            <p class="section-subtitle">Engineered with rigorous protocol standards and resilient design</p>
+            <h2 class="section-title">The Vault: Lab Artifacts & Builds 💻</h2>
+            <p class="section-subtitle">A chronological archive of my networking topologies and security experiments</p>
             <div class="menu-grid">
                 
-                <!-- Prototype 1 -->
+                <!-- Artifact 1 -->
                 <div class="menu-item">
                     <div class="menu-item-image">
-                        <img src="images/rainbow-cupcakes.jpg" alt="Prototype 1">
+                        <img src="images/rainbow-cupcakes.jpg" alt="Artifact 1">
                         <div class="menu-item-overlay"></div>
-                        <span class="menu-item-badge">⭐ Certified</span>
+                        <span class="menu-item-badge">⭐ CCNA Lab</span>
                     </div>
                     <div class="menu-item-content">
                         <div class="menu-item-header">
-                            <h3>Prototype 1: BGP Multi-Homing Topology</h3>
-                            <span class="menu-item-price">Tier 1</span>
+                            <h3>Artifact 1: BGP Multi-Homing Topology</h3>
+                            <span class="menu-item-price">Lab 01</span>
                         </div>
-                        <p>High-redundancy border gateway protocol architecture ensuring automatic failover and load balancing across multiple ISP uplinks.</p>
+                        <p>Dual-ISP redundant border gateway protocol lab demonstrating automatic route failover, AS-path prepending, and load balancing.</p>
                         <div class="menu-item-tags">
                             <span class="tag">🌐 BGP</span>
-                            <span class="tag">⚡ Redundancy</span>
+                            <span class="tag">⚡ Failover</span>
                         </div>
-                        <button class="add-to-cart"><span>Inspect Topology ♡</span></button>
+                        <button class="add-to-cart"><span>View Writeup ♡</span></button>
                     </div>
                 </div>
 
-                <!-- Prototype 2 -->
+                <!-- Artifact 2 -->
                 <div class="menu-item">
                     <div class="menu-item-image">
-                        <img src="images/glazed-donuts.jpg" alt="Prototype 2">
+                        <img src="images/glazed-donuts.jpg" alt="Artifact 2">
                         <div class="menu-item-overlay"></div>
-                        <span class="menu-item-badge">🔥 Hardened</span>
+                        <span class="menu-item-badge">🔥 Security+</span>
                     </div>
                     <div class="menu-item-content">
                         <div class="menu-item-header">
-                            <h3>Prototype 2: Zero-Trust Micro-Segmentation</h3>
-                            <span class="menu-item-price">Tier 2</span>
+                            <h3>Artifact 2: Zero-Trust VLAN Segmentation</h3>
+                            <span class="menu-item-price">Lab 02</span>
                         </div>
-                        <p>Granular internal firewall segmentation restricting lateral threat propagation and enforcing strict least-privilege user access.</p>
+                        <p>Granular firewall policy matrix isolating untrusted devices from core servers to prevent lateral movement across subnets.</p>
                         <div class="menu-item-tags">
                             <span class="tag">🔒 Zero-Trust</span>
+                            <span class="tag">🧱 ACLs</span>
                         </div>
-                        <button class="add-to-cart"><span>Inspect Topology ♡</span></button>
+                        <button class="add-to-cart"><span>View Writeup ♡</span></button>
                     </div>
                 </div>
 
-                <!-- Prototype 3 -->
+                <!-- Artifact 3 -->
                 <div class="menu-item">
                     <div class="menu-item-image">
-                        <img src="images/french-macarons.jpg" alt="Prototype 3">
+                        <img src="images/french-macarons.jpg" alt="Artifact 3">
                         <div class="menu-item-overlay"></div>
                     </div>
                     <div class="menu-item-content">
                         <div class="menu-item-header">
-                            <h3>Prototype 3: Encrypted Site-to-Site VPN</h3>
-                            <span class="menu-item-price">Tier 1</span>
+                            <h3>Artifact 3: Encrypted Site-to-Site IPsec VPN</h3>
+                            <span class="menu-item-price">Lab 03</span>
                         </div>
-                        <p>IPsec tunnel architecture with AES-256 encryption connecting branch offices securely across public cloud backbones.</p>
+                        <p>IKEv2/IPsec tunnel configuration with AES-256 encryption linking two simulated branch routers over an untrusted WAN.</p>
                         <div class="menu-item-tags">
                             <span class="tag">🛡️ IPsec</span>
-                            <span class="tag">⚙️ Tunneling</span>
+                            <span class="tag">🔑 Cryptography</span>
                         </div>
-                        <button class="add-to-cart"><span>Inspect Topology ♡</span></button>
+                        <button class="add-to-cart"><span>View Writeup ♡</span></button>
                     </div>
                 </div>
 
-                <!-- Prototype 4 -->
+                <!-- Artifact 4 -->
                 <div class="menu-item">
                     <div class="menu-item-image">
-                        <img src="images/chocolate-cookies.jpg" alt="Prototype 4">
+                        <img src="images/chocolate-cookies.jpg" alt="Artifact 4">
                         <div class="menu-item-overlay"></div>
                     </div>
                     <div class="menu-item-content">
                         <div class="menu-item-header">
-                            <h3>Prototype 4: Automated Vulnerability Audit</h3>
-                            <span class="menu-item-price">Tier 3</span>
+                            <h3>Artifact 4: Wireshark Packet Forensics</h3>
+                            <span class="menu-item-price">Lab 04</span>
                         </div>
-                        <p>Continuous network reconnaissance framework running automated patch audits and alerting on anomalous open ports.</p>
+                        <p>PCAP investigation capturing ARP spoofing, SYN flood signatures, and rogue DHCP server behavior in a controlled sandbox.</p>
                         <div class="menu-item-tags">
-                            <span class="tag">⚡ Audit</span>
+                            <span class="tag">🦈 Wireshark</span>
+                            <span class="tag">🔍 PCAP</span>
                         </div>
-                        <button class="add-to-cart"><span>Inspect Topology ♡</span></button>
+                        <button class="add-to-cart"><span>View Writeup ♡</span></button>
                     </div>
                 </div>
 
-                <!-- Prototype 5 -->
+                <!-- Artifact 5 -->
                 <div class="menu-item">
                     <div class="menu-item-image">
-                        <img src="images/decorated-cake.jpg" alt="Prototype 5">
+                        <img src="images/decorated-cake.jpg" alt="Artifact 5">
                         <div class="menu-item-overlay"></div>
-                        <span class="menu-item-badge">💝 Custom</span>
+                        <span class="menu-item-badge">💝 SIEM</span>
                     </div>
                     <div class="menu-item-content">
                         <div class="menu-item-header">
-                            <h3>Prototype 5: Enterprise IDS/IPS Shield</h3>
-                            <span class="menu-item-price">Custom</span>
+                            <h3>Artifact 5: Suricata IDS & Log Pipeline</h3>
+                            <span class="menu-item-price">Lab 05</span>
                         </div>
-                        <p>Signature-based and anomaly-based intrusion detection system deployed at core network choke points for real-time blocking.</p>
+                        <p>Custom intrusion detection ruleset deployed on a network tap, shipping real-time syslog alerts to a centralized dashboard.</p>
                         <div class="menu-item-tags">
-                            <span class="tag">🌐 Defense</span>
-                            <span class="tag">🛠️ Custom</span>
+                            <span class="tag">🚨 IDS/IPS</span>
+                            <span class="tag">📊 Syslog</span>
                         </div>
-                        <button class="add-to-cart"><span>Request Access ♡</span></button>
+                        <button class="add-to-cart"><span>View Writeup ♡</span></button>
                     </div>
                 </div>
 
-                <!-- Prototype 6 -->
+                <!-- Artifact 6 -->
                 <div class="menu-item">
                     <div class="menu-item-image">
-                        <img src="images/brownies.jpg" alt="Prototype 6">
+                        <img src="images/brownies.jpg" alt="Artifact 6">
                         <div class="menu-item-overlay"></div>
-                        <span class="menu-item-badge">🚀 Optimized</span>
+                        <span class="menu-item-badge">🚀 Switching</span>
                     </div>
                     <div class="menu-item-content">
                         <div class="menu-item-header">
-                            <h3>Prototype 6: QoS Traffic Prioritization</h3>
-                            <span class="menu-item-price">Tier 2</span>
+                            <h3>Artifact 6: OSPF Multi-Area & HSRP</h3>
+                            <span class="menu-item-price">Lab 06</span>
                         </div>
-                        <p>Quality of Service (QoS) rule sets guaranteeing bandwidth allocation for mission-critical VoIP and database replication streams.</p>
+                        <p>Enterprise campus topology utilizing multi-area OSPF route summarization and HSRP first-hop gateway redundancy.</p>
                         <div class="menu-item-tags">
-                            <span class="tag">⚡ QoS</span>
-                            <span class="tag">📦 Bandwidth</span>
+                            <span class="tag">📡 OSPF</span>
+                            <span class="tag">🔄 HSRP</span>
                         </div>
-                        <button class="add-to-cart"><span>Inspect Topology ♡</span></button>
+                        <button class="add-to-cart"><span>View Writeup ♡</span></button>
                     </div>
                 </div>
 
@@ -422,16 +438,16 @@
         </div>
     </section>
 
-    <!-- 5. Certifications & Credentials Section -->
+    <!-- 5. About & Credentials Section -->
     <section class="about" id="about">
         <div class="about-content">
             <div class="about-text">
-                <h2>Certifications & Credentials 💕</h2>
-                <p>reens-tech was built on a foundation of rigorous protocol mastery and proactive security defense. A resilient network must be secure by design, fault-tolerant, and continuously monitored.</p>
-                <p><strong>Verified Industry Credentials:</strong></p>
-                <p>• <strong>Cisco Certified Network Associate (CCNA 200-301):</strong> Validated expertise in network fundamentals, IP connectivity, routing protocols (OSPF/BGP), VLANs, and network automation.</p>
-                <p>• <strong>CompTIA Security+ (SY0-701):</strong> Certified proficiency in threat analysis, cryptographic protocols, identity and access management (IAM), and enterprise incident response.</p>
-                <a href="#contact" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Get In Touch</a>
+                <h2>About Me & Credentials 💕</h2>
+                <p>I built <strong>Reen's Tech Vault</strong> as a living digital archive to document my hands-on journey through network architecture, packet-level troubleshooting, and defensive cybersecurity.</p>
+                <p><strong>Verified Certifications:</strong></p>
+                <p>• <strong>Cisco Certified Network Associate (CCNA 200-301):</strong> Core routing and switching, IPv4/IPv6 subnetting, OSPF, VLANs, ACLs, and network automation fundamentals.</p>
+                <p>• <strong>CompTIA Security+ (SY0-701):</strong> Threat intelligence, network hardening, cryptography, identity and access management (IAM), and security operations.</p>
+                <a href="#contact" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Connect With Me</a>
             </div>
             <div class="about-image">
                 <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -454,83 +470,69 @@
         </div>
     </section>
 
-    <!-- 6. Newsletter Section -->
+    <!-- 6. Terminal Ping / Contact Callout Section -->
     <section class="newsletter">
         <div class="newsletter-container">
             <div class="newsletter-content">
-                <div class="newsletter-icon">💌</div>
-                <h2>Join Our SecOps Club!</h2>
-                <p>Subscribe to get exclusive network hardening bulletins, CCNA study insights, and security alerts delivered straight to your inbox!</p>
+                <div class="newsletter-icon">📡</div>
+                <h2>Send a Ping!</h2>
+                <p>Want to collaborate on a network lab, discuss security architecture, or chat about opportunities? Drop your email or reach out directly below.</p>
                 
-                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing! 💕');">
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Ping received! Thanks for reaching out. 💕');">
                     <input 
                         type="email" 
                         class="newsletter-input" 
-                        placeholder="Enter your email address" 
+                        placeholder="your.email@domain.com" 
                         required
                     >
-                    <button type="submit" class="newsletter-submit">Subscribe ✨</button>
+                    <button type="submit" class="newsletter-submit">Send Ping ✨</button>
                 </form>
 
                 <div class="newsletter-benefits">
-                    <div class="newsletter-benefit">Weekly hardening guides</div>
-                    <div class="newsletter-benefit">Security advisory drops</div>
-                    <div class="newsletter-benefit">CCNA & Security+ tips</div>
+                    <div class="newsletter-benefit">Network Engineering</div>
+                    <div class="newsletter-benefit">Cybersecurity & SOC</div>
+                    <div class="newsletter-benefit">Lab Collaborations</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 7. Footer / Contact Section -->
+    <!-- 7. Footer / Links -->
     <footer id="contact">
         <div class="footer-content">
             <div class="footer-grid">
                 <div class="footer-section">
-                    <h3>Operations Center</h3>
-                    <p>123 Protocol Way<br>Silicon Valley, CA 94025</p>
-                    <p>SecOps 24/7 Monitoring</p>
+                    <h3>Reen's Tech Vault</h3>
+                    <p>Personal Network Engineering & Cybersecurity Portfolio.</p>
+                    <p>CCNA 200-301 • CompTIA Security+</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Contact</h3>
-                    <a href="tel:555-SECURE">📞 (555) SECURE-1</a>
-                    <a href="mailto:security@reens-tech.com">✉️ security@reens-tech.com</a>
+                    <h3>Direct Links</h3>
+                    <a href="mailto:reen@reens-tech.com">✉️ reen@reens-tech.com</a>
+                    <a href="https://github.com" target="_blank">💻 GitHub Repositories</a>
                     <div class="social-links">
-                        <a href="#" aria-label="Instagram">
+                        <a href="#" aria-label="GitHub">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="#8DC4B2">
-                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="#8DC4B2" stroke-width="2" fill="none"/>
-                                <circle cx="12" cy="12" r="4" stroke="#8DC4B2" stroke-width="2" fill="none"/>
-                                <circle cx="18" cy="6" r="1" fill="#8DC4B2"/>
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                             </svg>
                         </a>
-                        <a href="#" aria-label="Facebook">
+                        <a href="#" aria-label="LinkedIn">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="#8DC4B2">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Twitter">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#8DC4B2">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="YouTube">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#8DC4B2">
-                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
-                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#FFF8F0"/>
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                             </svg>
                         </a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Service Hours</h3>
-                    <p>Monday - Friday: 8am - 8pm</p>
-                    <p>Saturday: 8am - 9pm</p>
-                    <p>Sunday: 9am - 7pm</p>
-                    <p style="margin-top: 1rem; font-size: 0.9rem;">🛡️ Certified Network Audits Daily!</p>
+                    <h3>Currently Exploring</h3>
+                    <p>• Python Network Automation</p>
+                    <p>• Cloud Security Architecture</p>
+                    <p>• Active Directory Hardening</p>
                 </div>
             </div>
             <div class="copyright">
-                <p>© 2026 reens-tech. Made with ♡ and robust security. All rights reserved.</p>
-                <p style="margin-top: 0.5rem;">Designed by <a href="https://www.tooplate.com" target="_blank" rel="nofollow" style="color: #B5EAD7; text-decoration: none; font-weight: 600;">Tooplate</a></p>
+                <p>© 2026 Reen's Tech Vault. Built with ♡ and packets.</p>
+                <p style="margin-top: 0.5rem;">Template base by <a href="https://www.tooplate.com" target="_blank" rel="nofollow" style="color: #B5EAD7; text-decoration: none; font-weight: 600;">Tooplate</a></p>
             </div>
         </div>
     </footer>
