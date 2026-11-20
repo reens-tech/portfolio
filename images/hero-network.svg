@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="bg" x1="30" y1="20" x2="470" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f0fcf8"/>
+      <stop offset="1" stop-color="#e7e6ff"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#70c8ac"/>
+      <stop offset="1" stop-color="#4f8eab"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dy="12"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".18"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#71839e" stroke-opacity=".12"/>
+    </pattern>
+  </defs>
+  <rect width="500" height="500" rx="48" fill="url(#bg)"/>
+  <rect width="500" height="500" rx="48" fill="url(#grid)"/>
+  <circle cx="92" cy="94" r="68" fill="#b9eedb" opacity=".38"/>
+  <circle cx="416" cy="410" r="90" fill="#c8c0ff" opacity=".34"/>
+  <g stroke="#7280a8" stroke-width="5" stroke-linecap="round" opacity=".58">
+    <path d="M130 160 245 245M370 155 255 245M130 350l115-95M370 350l-115-95"/>
+    <path d="M130 160v190M370 155v195"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="163" y="174" width="174" height="150" rx="34" fill="#fff" stroke="#d7e2ee" stroke-width="3"/>
+    <rect x="186" y="199" width="128" height="24" rx="12" fill="#273654"/>
+    <circle cx="203" cy="211" r="4" fill="#92e2b9"/>
+    <circle cx="217" cy="211" r="4" fill="#ffc16e"/>
+    <path d="M205 264h20m-10-10v20m60-10h20m-10-10v20" stroke="#4d83a0" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="245" cy="264" r="11" fill="#90dbbf"/>
+    <circle cx="255" cy="264" r="11" fill="#c5bafa"/>
+    <path d="M210 296h80" stroke="#d7e0eb" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#shadow)">
+    <circle cx="130" cy="160" r="42" fill="#fff" stroke="#d7e2ee" stroke-width="3"/>
+    <circle cx="130" cy="160" r="25" fill="url(#node)"/>
+    <path d="M118 160h24m-12-12v24" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="370" cy="155" r="42" fill="#fff" stroke="#d7e2ee" stroke-width="3"/>
+    <circle cx="370" cy="155" r="25" fill="#8878c8"/>
+    <path d="M358 155h24m-12-12v24" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="130" cy="350" r="42" fill="#fff" stroke="#d7e2ee" stroke-width="3"/>
+    <circle cx="130" cy="350" r="25" fill="#f1a589"/>
+    <path d="M118 350h24m-12-12v24" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="370" cy="350" r="42" fill="#fff" stroke="#d7e2ee" stroke-width="3"/>
+    <circle cx="370" cy="350" r="25" fill="#54a6aa"/>
+    <path d="M358 350h24m-12-12v24" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g fill="#5b6684" opacity=".7">
+    <circle cx="84" cy="248" r="5"/><circle cx="414" cy="245" r="5"/>
+    <circle cx="250" cy="100" r="5"/><circle cx="250" cy="400" r="5"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="25" x2="480" y2="475" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e6f8f6"/>
+      <stop offset="1" stop-color="#f2eaff"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="155" y1="155" x2="350" y2="315" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#d8e2fa"/>
+    </linearGradient>
+    <filter id="shadow" filterUnits="userSpaceOnUse" x="70" y="80" width="360" height="360" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dy="12"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".18"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="500" height="500" rx="48" fill="url(#bg)"/>
+  <circle cx="90" cy="390" r="70" fill="#b7e9d8" opacity=".45"/>
+  <circle cx="418" cy="116" r="72" fill="#d2c8f7" opacity=".5"/>
+  <g stroke="#7d8ba6" stroke-width="5" stroke-linecap="round" opacity=".5">
+    <path d="M150 177 120 125M350 177l31-52M150 300l-33 60M350 300l34 60M250 330v65"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M157 308c-43 0-77-32-77-72 0-38 31-69 70-72 16-47 60-80 112-80 62 0 113 48 117 108 31 8 53 35 53 67 0 38-31 69-69 69H157Z" fill="url(#cloud)" stroke="#fff" stroke-width="8"/>
+    <path d="M202 231h96M250 183v97" stroke="#5d9fa9" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="250" cy="231" r="17" fill="#9b8ddd" stroke="#fff" stroke-width="7"/>
+    <circle cx="202" cy="231" r="10" fill="#64c0a3"/><circle cx="298" cy="231" r="10" fill="#f3a48b"/>
+    <circle cx="250" cy="183" r="10" fill="#64c0a3"/><circle cx="250" cy="280" r="10" fill="#f3a48b"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="71" y="88" width="76" height="64" rx="13" fill="#fff" stroke="#d7e2ee" stroke-width="3"/>
+    <rect x="91" y="101" width="36" height="25" rx="4" fill="#273654"/>
+    <path d="M84 139h50" stroke="#a8b5c9" stroke-width="4" stroke-linecap="round"/>
+    <rect x="354" y="348" width="87" height="58" rx="13" fill="#fff" stroke="#d7e2ee" stroke-width="3"/>
+    <rect x="370" y="361" width="55" height="31" rx="5" fill="#273654"/>
+    <path d="m377 376 9 8 17-17" fill="none" stroke="#8ad7b5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M229 397h42l10 12h-62l10-12Z" fill="#8f84cb"/>
+  </g>
+</svg>

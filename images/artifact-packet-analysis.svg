@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="40" x2="1110" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5EAF8"/><stop offset="1" stop-color="#E8D9F5"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="230" y1="155" x2="980" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B4E7FF"/><stop offset="1" stop-color="#D4F5FF"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#c5d5e8" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><rect width="1200" height="800" fill="url(#grid)"/>
+  <text x="74" y="90" fill="#8B6B8B" font-family="Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="5" opacity=".8">PACKET FORENSICS</text>
+  <rect x="140" y="150" width="920" height="500" rx="28" fill="url(#screen)" stroke="#C4E8FF" stroke-opacity=".8" stroke-width="4"/>
+  <path d="M140 215h920" stroke="#A8E6CF" stroke-opacity=".6" stroke-width="3"/>
+  <g fill="#E8C4E8"><circle cx="183" cy="183" r="9"/><circle cx="215" cy="183" r="9"/></g><circle cx="247" cy="183" r="9" fill="#A8E6CF"/>
+  <g fill="#6B5B95" font-family="Consolas, monospace" font-size="20" opacity=".85">
+    <text x="182" y="272">TIME</text><text x="330" y="272">SOURCE</text><text x="530" y="272">DESTINATION</text><text x="815" y="272">PROTOCOL</text>
+  </g>
+  <g stroke="#D4A8E8" stroke-width="2" opacity=".6">
+    <path d="M180 294h840M180 350h840M180 406h840M180 462h840M180 518h840"/>
+  </g>
+  <g font-family="Consolas, monospace" font-size="18">
+    <text x="182" y="331" fill="#A8E6CF">00:00:12.408</text><text x="330" y="331" fill="#6B5B95">192.0.2.14</text><text x="530" y="331" fill="#6B5B95">198.51.100.8</text><text x="815" y="331" fill="#D4A8E8">TCP / TLS</text>
+    <text x="182" y="387" fill="#A8E6CF">00:00:12.415</text><text x="330" y="387" fill="#6B5B95">198.51.100.8</text><text x="530" y="387" fill="#6B5B95">192.0.2.14</text><text x="815" y="387" fill="#E8C4E8">TCP / ACK</text>
+    <text x="182" y="443" fill="#A8E6CF">00:00:12.522</text><text x="330" y="443" fill="#6B5B95">192.0.2.14</text><text x="530" y="443" fill="#6B5B95">192.0.2.1</text><text x="815" y="443" fill="#C4E8FF">DNS / UDP</text>
+    <text x="182" y="499" fill="#A8E6CF">00:00:12.609</text><text x="330" y="499" fill="#6B5B95">192.0.2.1</text><text x="530" y="499" fill="#6B5B95">192.0.2.14</text><text x="815" y="499" fill="#C4E8FF">DNS / UDP</text>
+  </g>
+  <rect x="180" y="550" width="840" height="64" rx="14" fill="#E8D4F0" stroke="#D4A8E8" stroke-width="2"/>
+  <path d="M210 582h80l20-20 23 38 27-48 24 30h43l22-16 20 16h74l25-26 22 26h46" fill="none" stroke="#A8E6CF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="74" y="735" fill="#8B6B8B" font-family="Segoe UI, Arial, sans-serif" font-size="18" letter-spacing="3" opacity=".7">CAPTURE  /  FILTER  /  CORRELATE  /  EXPLAIN</text>
+</svg>

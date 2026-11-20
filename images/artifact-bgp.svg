@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="1140" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE5F3"/><stop offset="1" stop-color="#F5D4E8"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFD4E5"/><stop offset="1" stop-color="#E8D4F5"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1" height="1">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/><feOffset dy="12"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#b6cee7" stroke-opacity=".1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><rect width="1200" height="800" fill="url(#grid)"/>
+  <circle cx="200" cy="200" r="190" fill="#FFB7D5" opacity=".15"/><circle cx="1020" cy="630" r="210" fill="#DDA3D5" opacity=".18"/>
+  <g fill="none" stroke="#FFB7D5" stroke-width="8" stroke-linecap="round">
+    <path d="M265 285 485 395M935 285 715 395M265 550l220-105M935 550 715 445"/>
+  </g>
+  <g fill="none" stroke="#E8C4E8" stroke-width="4" stroke-dasharray="14 14" opacity=".8">
+    <path d="M300 270 490 370M900 270 710 370"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="450" y="300" width="300" height="250" rx="34" fill="url(#card)" stroke="#E8C4E8" stroke-opacity=".8" stroke-width="4"/>
+    <circle cx="600" cy="385" r="50" fill="#FFB7D5"/>
+    <path d="M572 385h56m-28-28v56" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+    <rect x="510" y="462" width="180" height="18" rx="9" fill="#E8D4F5" opacity=".9"/>
+    <rect x="545" y="495" width="110" height="12" rx="6" fill="#E8D4F5" opacity=".6"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="90" y="190" width="300" height="180" rx="26" fill="#FFF5F9"/>
+    <path d="M155 293c-33 0-56-20-56-47 0-24 19-43 43-45 10-28 35-47 67-47 37 0 67 28 69 63 23 3 39 19 39 39 0 21-18 37-41 37H155Z" fill="#FFD4E5"/>
+    <text x="240" y="338" fill="#C45E8E" font-family="Segoe UI, Arial, sans-serif" font-size="21" text-anchor="middle" font-weight="700">UPSTREAM A</text>
+    <rect x="810" y="190" width="300" height="180" rx="26" fill="#FFF5F9"/>
+    <path d="M875 293c-33 0-56-20-56-47 0-24 19-43 43-45 10-28 35-47 67-47 37 0 67 28 69 63 23 3 39 19 39 39 0 21-18 37-41 37H875Z" fill="#FFD4E5"/>
+    <text x="960" y="338" fill="#C45E8E" font-family="Segoe UI, Arial, sans-serif" font-size="21" text-anchor="middle" font-weight="700">UPSTREAM B</text>
+  </g>
+  <g fill="#FFF5F9" stroke="#FFD4E5" stroke-width="3">
+    <circle cx="200" cy="580" r="48"/><circle cx="1000" cy="580" r="48"/>
+    <circle cx="600" cy="150" r="44"/>
+  </g>
+  <g fill="#C45E8E">
+    <path d="M180 580h40m-20-20v40" stroke="#C45E8E" stroke-width="7" stroke-linecap="round"/>
+    <path d="M980 580h40m-20-20v40" stroke="#C45E8E" stroke-width="7" stroke-linecap="round"/>
+    <path d="M580 150h40m-20-20v40" stroke="#C45E8E" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g fill="#8B6B8B" font-family="Segoe UI, Arial, sans-serif">
+    <text x="74" y="90" font-size="22" letter-spacing="5" opacity=".8">BORDER GATEWAY PROTOCOL</text>
+    <text x="74" y="735" font-size="18" letter-spacing="3" opacity=".65">MULTI-HOMING  /  ROUTE SELECTION  /  FAILOVER</text>
+  </g>
+</svg>

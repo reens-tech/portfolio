@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="bg" x1="30" y1="20" x2="470" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f7f0ff"/>
+      <stop offset="1" stop-color="#e6fbf5"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="168" y1="116" x2="346" y2="386" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9d91e3"/>
+      <stop offset="1" stop-color="#53b7a3"/>
+    </linearGradient>
+    <filter id="shadow" filterUnits="userSpaceOnUse" x="80" y="60" width="340" height="390" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dy="12"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".2"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="500" height="500" rx="48" fill="url(#bg)"/>
+  <circle cx="98" cy="130" r="58" fill="#f7c8b7" opacity=".46"/>
+  <circle cx="412" cy="372" r="78" fill="#bcb0f1" opacity=".4"/>
+  <g stroke="#8292ad" stroke-width="4" stroke-linecap="round" opacity=".52">
+    <path d="M115 216 181 245M385 216l-66 29M126 332l59-17M374 332l-59-17"/>
+    <path d="M249 98v43M250 408v-46"/>
+  </g>
+  <g fill="#fff" stroke="#d7e2ee" stroke-width="3">
+    <circle cx="111" cy="214" r="25"/><circle cx="389" cy="214" r="25"/>
+    <circle cx="119" cy="335" r="25"/><circle cx="381" cy="335" r="25"/>
+    <circle cx="250" cy="92" r="22"/><circle cx="250" cy="414" r="22"/>
+  </g>
+  <g fill="#59a9a0">
+    <circle cx="111" cy="214" r="10"/><circle cx="389" cy="214" r="10"/>
+    <circle cx="119" cy="335" r="10"/><circle cx="381" cy="335" r="10"/>
+    <circle cx="250" cy="92" r="8"/><circle cx="250" cy="414" r="8"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M250 112 352 154v85c0 78-42 131-102 166-60-35-102-88-102-166v-85l102-42Z" fill="url(#shield)" stroke="#fff" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M217 243v-18a33 33 0 0 1 66 0v18" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round"/>
+    <rect x="204" y="238" width="92" height="76" rx="18" fill="#fff"/>
+    <circle cx="250" cy="270" r="9" fill="#8478c5"/>
+    <path d="M250 278v15" stroke="#8478c5" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <path d="m88 115 5 13 13 5-13 5-5 13-5-13-13-5 13-5 5-13ZM407 107l4 10 10 4-10 4-4 10-4-10-10-4 10-4 4-10Z" fill="#f2a88f"/>
+</svg>
