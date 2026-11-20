@@ -1,0 +1,180 @@
+🛡️ REEN'S TECH VAULT - PORTFOLIO STRUCTURE MAP
+
+════════════════════════════════════════════════════════════════════════════════
+
+                              🏠 INDEX.HTML (Main)
+                                     ↓
+                    ┌─────────────────┼─────────────────┐
+                    ↓                 ↓                 ↓
+            🧹 CLEAN SLATE      🔑 PAM SYSTEMS    🛡️ LAB ARTIFACTS
+            (clean-slate.html)  (pam-systems.html)  (In-page #menu)
+                    ↓                 ↓
+        ┌───────────┬───────────┬───────┐    ┌────────────┬──────────┬───────────┐
+        ↓           ↓           ↓       ↓    ↓            ↓          ↓           ↓
+    🔐 CENTR.    👤 LOCAL    🔥FIRE   🌐JUN 🏛️DELINEA  🗝️KEEPER  ⚡HASHICORP
+    CREDENTIALS  ACCOUNTS    WALLS    NX-OS  Onboarding  Setup     Docs
+        ↓           ↓           ↓       ↓    ↓            ↓          ↓
+    [COMPLETE]  [TEMPLATE] [TEMPLATE][TEMP][COMPLETE]  [COMPLETE] [COMPLETE]
+
+════════════════════════════════════════════════════════════════════════════════
+
+📑 PAGE HIERARCHY
+
+Level 1: Main Portal
+  └─ index.html ..................... Main portfolio landing page
+     • Updated navigation with new page links
+     • Added "View Full Documentation" buttons
+     • Links to Clean Slate & PAM Systems hubs
+
+Level 2: Hub Pages (Navigation Centers)
+  
+  ├─ clean-slate.html .............. Operation Clean Slate Overview
+  │  • Describes the initiative
+  │  • 6 topic cards with descriptions
+  │  • Links to all Clean Slate detail pages
+  │
+  └─ pam-systems.html .............. PAM Systems Overview  
+     • Describes three credential management systems
+     • 3 service cards with quick reference
+     • Links to all PAM guide pages
+
+Level 3: Detail Pages (Specific Topics)
+
+  OPERATION CLEAN SLATE:
+  
+  ├─ clean-slate-centralized-credentials.html [✅ COMPLETE]
+  │  │ Detailed content:
+  │  ├─ TACACS authentication status
+  │  ├─ Delinea credential overview
+  │  ├─ Credential inventory table
+  │  ├─ Best practices & guidance
+  │  └─ Links to related topics
+  │
+  ├─ clean-slate-local-accounts.html [🚧 TEMPLATE]
+  │  └─ Ready for: Device audit findings, status summary
+  │
+  ├─ clean-slate-firewalls.html [🚧 TEMPLATE]
+  │  └─ Ready for: F5, FortiGate, other firewalls
+  │
+  ├─ clean-slate-juniper-nxos.html [🚧 TEMPLATE]
+  │  └─ Ready for: Juniper, Cisco NX-OS credentials
+  │
+  ├─ clean-slate-service-accounts.html [🚧 TEMPLATE]
+  │  └─ Ready for: Service accounts, FIDs, rotation
+  │
+  └─ clean-slate-servers-other.html [🚧 TEMPLATE]
+     └─ Ready for: Server credentials, misc devices
+
+  PAM SYSTEMS:
+  
+  ├─ pam-delinea.html [✅ COMPLETE]
+  │  │ Comprehensive guide:
+  │  ├─ Access request process
+  │  ├─ BARS group requirements
+  │  ├─ Example request template
+  │  ├─ Vault provisioning steps
+  │  └─ Troubleshooting section
+  │
+  ├─ pam-keeper.html [✅ COMPLETE]
+  │  │ Setup guide:
+  │  ├─ Prerequisites checklist
+  │  ├─ Access instructions
+  │  ├─ Password import guidance
+  │  └─ Support contacts
+  │
+  └─ pam-hashicorp.html [✅ COMPLETE]
+     │ Documentation hub:
+     ├─ Getting started
+     ├─ FID password rotation
+     ├─ Vault architecture
+     ├─ Prod/Dev environments
+     └─ Support resources
+
+════════════════════════════════════════════════════════════════════════════════
+
+🗺️  NAVIGATION PATHS
+
+PATH 1: Index → Clean Slate Topic
+  index.html
+  └─→ [Nav: "~/clean-slate"] or [Button: "View Full Clean Slate"]
+      └─→ clean-slate.html
+          └─→ [Card: "🔐 Centralized Credentials"]
+              └─→ clean-slate-centralized-credentials.html
+
+PATH 2: Index → PAM System  
+  index.html
+  └─→ [Nav: "~/credentials"] or [Button: "PAM Systems Guides"]
+      └─→ pam-systems.html
+          └─→ [Card: "🏛️ Delinea Secret Server"]
+              └─→ pam-delinea.html
+
+PATH 3: Within Topic → Related Topics
+  pam-delinea.html
+  └─→ [Bottom Link: "→ Keeper Password Vault"]
+      └─→ pam-keeper.html
+  └─→ [Bottom Link: "→ HashiCorp Vault"]
+      └─→ pam-hashicorp.html
+
+════════════════════════════════════════════════════════════════════════════════
+
+🎨 DESIGN SYSTEM
+
+All pages share:
+  ✓ vault-portfolio.css ........... Responsive layout & styling
+  ✓ vault-portfolio.js ............ Navigation interactivity
+  ✓ Kawaii color palette .......... Mint, aqua, peach, lavender
+  ✓ Responsive grid layout ........ Works mobile to desktop
+  ✓ Animated decorations .......... Floating sparkles
+  ✓ Consistent typography ......... Clear hierarchy & readability
+
+Each detail page includes:
+  ✓ Back button (to parent hub)
+  ✓ Navigation bar (to main sections)
+  ✓ Table of contents (for quick nav)
+  ✓ Info/Warning/Note boxes (for context)
+  ✓ Code blocks (for technical ref)
+  ✓ Tables (for data organization)
+  ✓ Related links (at bottom)
+
+════════════════════════════════════════════════════════════════════════════════
+
+📊 CONTENT STATUS SUMMARY
+
+                    Complete  Template  Total
+                    ════════  ════════  ═════
+Operation Clean Slate   1        6        7
+PAM Systems Hub         1        0        1
+PAM Guides              3        0        3
+Main Index             ✅        -        1
+                    ────────  ────────  ─────
+                       5        6       13
+
+✅ Ready for deployment: YES
+🎨 Styling complete: YES  
+🔗 All links working: YES
+📱 Responsive design: YES
+
+════════════════════════════════════════════════════════════════════════════════
+
+🚀 DEPLOYMENT CHECKLIST
+
+Before going live on GitHub Pages:
+  ☑ All 13 HTML files created
+  ☑ index.html updated with navigation
+  ☑ All internal links verified
+  ☑ CSS/JS files referenced correctly
+  ☑ Responsive design tested
+  ☑ All pages styled consistently
+  ☑ Content sanitized (no sensitive data)
+  ☑ Back buttons working
+  ☑ Navigation bars functional
+
+Deployment command:
+  $ git add .
+  $ git commit -m "Add dedicated pages for Clean Slate and PAM Systems"
+  $ git push origin main
+
+Live URL:
+  https://reens-tech.github.io/portfolio/
+
+════════════════════════════════════════════════════════════════════════════════
